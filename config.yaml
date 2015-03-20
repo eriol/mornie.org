@@ -3,5 +3,5 @@ baseurl: "https://mornie.org/"
 title: mornie.org
 languageCode: en-us
 permalinks:
-    post: /:year/:month/:day/:filename/
+    blog: /:year/:month/:day/:filename/
 ---
