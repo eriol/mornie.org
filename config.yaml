@@ -4,5 +4,5 @@ title: mornie.org
 languageCode: en-us
 MetaDataFormat: yaml
 permalinks:
-    blog: /:year/:month/:day/:filename/
+    post: /blog/:year/:month/:day/:filename/
 ---
