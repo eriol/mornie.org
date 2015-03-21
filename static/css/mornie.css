@@ -1,0 +1,55 @@
+@import url(http://fonts.googleapis.com/css?family=Artifika|Roboto|Roboto+Slab);
+
+body {
+  font: 400 17px/25px 'Roboto', sans-serif;
+  font-weight: 400;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: url("../images/grey.png");
+}
+
+.header,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.header {
+  padding-bottom: 20px;
+}
+
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+} 
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+
+#painting {
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  height: 150px;
+  background: url("../images/background.jpg") no-repeat;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 4px;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Artifika', serif;
+  font-weight: 400;
+  color: #A60000;
+}
+
+a {
+  color: #ff4040;
+}
+
+a:hover {
+  color: #008500;
+}
