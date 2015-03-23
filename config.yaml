@@ -3,6 +3,7 @@ baseurl: "https://mornie.org/"
 title: mornie.org
 languageCode: en-us
 MetaDataFormat: yaml
+pluralizeListTitles: false
 permalinks:
     blog: /blog/:year/:month/:day/:filename/
 ---
