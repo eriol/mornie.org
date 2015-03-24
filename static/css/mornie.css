@@ -81,3 +81,8 @@ section.list-group-item {
   background-color: transparent;
   border: none;
 }
+
+article img {
+  display: block;
+  margin: auto;
+}
