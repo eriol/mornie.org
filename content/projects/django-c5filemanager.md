@@ -1,6 +1,7 @@
 ---
 date: 2010-12-01T07:39:00+01:00
 title: django-c5filemanager
+project_description: Django connector for Core Five Filemanager
 ---
 
 **django-c5filemanager** (available under the BSD license) is a Django connector

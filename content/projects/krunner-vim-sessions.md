@@ -1,6 +1,7 @@
 ---
 date: 2014-02-07T02:20:00+01:00
 title: krunner-vim-sessions
+project_description: KRunner plugin to handle Vim sessions
 ---
 
 **krunner-vim-sessions** (available under the LGPL3 license) is a

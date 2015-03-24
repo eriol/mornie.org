@@ -1,6 +1,7 @@
 ---
 date: 2011-06-05T10:58:00+01:00
 title: liboceanography
+project_description: C library for calculation of physical properties of sea water
 ---
 
 **liboceanography** is a C library (released under LGPLv3) that provides basic
