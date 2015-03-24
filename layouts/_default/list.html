@@ -11,6 +11,7 @@
           <span>{{ .Date.Format "Jan 2, 2006" }} &middot; {{ .ReadingTime }} minute read</span>
           </header>
           <p>{{ .Description }}</p>
+          {{ partial "taxonomy.html" . }}
           <a href="{{ .Permalink }}">Read full entry &rarr;</a>
        </article>
       {{ end }}
