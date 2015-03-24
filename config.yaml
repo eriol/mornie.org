@@ -7,4 +7,7 @@ pluralizeListTitles: false
 disqusShortname: mornie
 permalinks:
     blog: /blog/:year/:month/:day/:filename/
+taxonomies:
+  tag: "tags"
+  category: "categories"
 ---
