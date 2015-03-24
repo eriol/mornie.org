@@ -1,6 +1,7 @@
 ---
 date: 2012-11-01T20:42:00+01:00
 title: pypel
+project_description: Simple tool to manage receipts
 ---
 
 **pypel** (available under the BSD license) is a is a simple tool to manage
