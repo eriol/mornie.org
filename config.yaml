@@ -4,6 +4,7 @@ title: "Daniele 'Eriol' Tricoli Website"
 languageCode: en-us
 MetaDataFormat: yaml
 pluralizeListTitles: false
+disqusShortname: mornie
 permalinks:
     blog: /blog/:year/:month/:day/:filename/
 ---
