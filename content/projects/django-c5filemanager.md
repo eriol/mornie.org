@@ -1,7 +1,7 @@
-+++
-date = "2010-12-01T07:39:00+01:00"
-title = "django-c5filemanager"
-+++
+---
+date: 2010-12-01T07:39:00+01:00
+title: django-c5filemanager
+---
 
 **django-c5filemanager** (available under the BSD license) is a Django connector
 for Core Five Labs file manager. It provides an easy way to add Core Five Labs

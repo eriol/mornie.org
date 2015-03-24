@@ -1,7 +1,7 @@
-+++
-date = "2014-02-07T02:20:00+01:00"
-title = "krunner-vim-sessions"
-+++
+---
+date: 2014-02-07T02:20:00+01:00
+title: krunner-vim-sessions
+---
 
 **krunner-vim-sessions** (available under the LGPL3 license) is a
 [KRunner](http://userbase.kde.org/Plasma/Krunner) plugin to handle Vim sessions.
