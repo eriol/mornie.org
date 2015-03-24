@@ -1,7 +1,7 @@
-+++
-date = "2012-11-01T20:42:00+01:00"
-title = "pypel"
-+++
+---
+date: 2012-11-01T20:42:00+01:00
+title: pypel
+---
 
 **pypel** (available under the BSD license) is a is a simple tool to manage
 receipts. It uses XMP to store metatada inside receipts so you can share them
