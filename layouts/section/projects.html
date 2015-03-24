@@ -1,0 +1,18 @@
+{{ partial "header.html" . }}
+<body>
+<div class="container">
+{{ partial "page_header.html" . }}
+
+<div class="list-group row">
+  {{ range .Data.Pages }}
+    <section class="list-group-item col-xs-6">
+      <header>
+        <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+      </header>
+      {{ with .Params.project_description }}
+        <article>{{.}}</article>
+      {{ end }}
+    </section>
+  {{ end }}
+</div>
+{{ partial "footer.html" . }}
