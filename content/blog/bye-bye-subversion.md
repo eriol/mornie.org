@@ -1,6 +1,10 @@
 ---
 date: 2010-11-18T18:24:24+01:00
 title: Bye bye Subversion!
+tags:
+- mercurial
+- subversion
+- development
 ---
 
 I have just turned off my SVN server as all my projects has been migrated to

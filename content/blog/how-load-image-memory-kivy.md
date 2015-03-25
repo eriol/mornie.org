@@ -1,6 +1,10 @@
 ---
 date: 2013-11-06T19:55:04+01:00
 title: How to load an image from memory in Kivy
+tags:
+- image
+- kivy
+- python
 ---
 
 Sometime you may have the need to load an image already in memory instead of

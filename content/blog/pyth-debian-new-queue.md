@@ -1,6 +1,9 @@
 ---
 date: 2010-10-21T13:24:38+01:00
 title: pyth in Debian NEW Queue
+tags:
+- debian
+- python
 ---
 
 Thanks to [Piotr Ożarowski](http://www.ozarowski.pl/) my first Debian package

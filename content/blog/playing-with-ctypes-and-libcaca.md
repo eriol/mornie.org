@@ -1,6 +1,11 @@
 ---
 date: 2007-03-25T16:30:29+01:00
 title: Playing with ctypes and libcaca
+tags:
+- ctypes
+- libcaca
+- python
+- snake
 ---
 
 [ctypes](http://docs.python.org/dev/lib/module-ctypes.html) is a foreign

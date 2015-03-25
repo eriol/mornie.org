@@ -1,6 +1,11 @@
 ---
 date: 2012-12-22T16:22:54+01:00
 title: How to fix CKEditor 4 default theme in Django admin
+tags:
+- admin
+- ckeditor4
+- django
+- python
 ---
 
 [CKEditor](http://ckeditor.com/) 4 default theme, [Moono](http://ckeditor.com/addon/moono),
