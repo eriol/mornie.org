@@ -1,6 +1,8 @@
 ---
 date: 2007-03-25T16:30:29+01:00
 title: Playing with ctypes and libcaca
+aliases:
+- /blog/2007/03/25/Playing-with-ctypes-and-libcaca/
 tags:
 - ctypes
 - libcaca
