@@ -5,7 +5,7 @@ deploy: build upload
 clean:
 	rm -rf public
 
-build:
+build: clean
 	@hugo
 
 upload:
