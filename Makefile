@@ -12,4 +12,4 @@ upload:
 	rsync -a public/ mornie.org:/srv/www/www.mornie.org/html/
 
 serve:
-	@hugo server --watch
+	@hugo server --buildDrafts --buildFuture --watch
