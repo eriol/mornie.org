@@ -9,8 +9,8 @@ functions for calculation of physical properties of sea water.
 
 For more information [browse the online documentation][docs].
 
-The liboceanography's mercurial repository is located at
-<http://hg.mornie.org/oceanography/liboceanography>.
+The liboceanography's git repository is located at
+<https://github.com/eriol/liboceanography>.
 
 Feel free to mail me to report bugs and request features.
 Download
