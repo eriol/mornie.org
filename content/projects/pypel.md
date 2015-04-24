@@ -10,7 +10,7 @@ in a very easy way.
 
 For more information [browse the online documentation][docs].
 
-The pypel's mercurial repository is located at <http://hg.mornie.org/pypel>.
+The pypel's git repository is located at <https://github.com/eriol/pypel>.
 
 Feel free to mail me to report bugs and request features.
 
