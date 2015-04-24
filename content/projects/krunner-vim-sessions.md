@@ -11,10 +11,8 @@ project_description: KRunner plugin to handle Vim sessions
 
 For more information [browse the online documentation][docs].
 
-The krunner-vim-sessions' mercurial repository is located at
-<http://hg.mornie.org/krunner-vim-sessions>.
-
-Feel free to mail me to report bugs and request features.
+The krunner-vim-sessions' git repository is located at
+<https://github.com/eriol/krunner-vim-sessions>.
 
 ## Download ##
 
