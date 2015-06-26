@@ -8,7 +8,7 @@ project_description: Simple tool to manage receipts
 receipts. It uses XMP to store metatada inside receipts so you can share them
 in a very easy way.
 
-For more information [browse the online documentation][docs].
+For more information browse the documentation on [pypel.rtfd.org][docs].
 
 The pypel's git repository is located at <https://github.com/eriol/pypel>.
 
@@ -21,7 +21,7 @@ Feel free to mail me to report bugs and request features.
  * version 0.1: from [pypi][pypi_v0.1], [tar.gz][tarball_v0.1]
 
 
-[docs]: http://docs.mornie.org/pypel/
+[docs]: http://pypel.rtfd.org
 
 [pypi_v0.1]: https://pypi.python.org/pypi/pypel/0.1
 [pypi_v0.2]: https://pypi.python.org/pypi/pypel/0.2
