@@ -16,6 +16,7 @@ Feel free to mail me to report bugs and request features.
 
 ## Download ##
 
+ * version 0.3: from [pypi][pypi_v0.3]
  * version 0.2: from [pypi][pypi_v0.2], [tar.gz][tarball_v0.2]
  * version 0.1: from [pypi][pypi_v0.1], [tar.gz][tarball_v0.1]
 
@@ -24,6 +25,7 @@ Feel free to mail me to report bugs and request features.
 
 [pypi_v0.1]: https://pypi.python.org/pypi/pypel/0.1
 [pypi_v0.2]: https://pypi.python.org/pypi/pypel/0.2
+[pypi_v0.3]: https://pypi.python.org/pypi/pypel/0.3
 
 [tarball_v0.1]: http://downloads.mornie.org/pypel/pypel-0.1.tar.gz
 [tarball_v0.2]: http://downloads.mornie.org/pypel/pypel-0.2.tar.gz
