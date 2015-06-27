@@ -12,7 +12,8 @@ For more information browse the documentation on [pypel.rtfd.org][docs].
 
 The pypel's git repository is located at <https://github.com/eriol/pypel>.
 
-Feel free to mail me to report bugs and request features.
+Feel free to mail me to report bugs and request features or use
+<https://github.com/eriol/pypel/issues>.
 
 ## Download ##
 
