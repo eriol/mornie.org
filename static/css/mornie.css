@@ -54,6 +54,11 @@ a:hover {
   color: #008500;
 }
 
+table th {
+  text-align: right;
+  padding-right: 1.5em;
+}
+
 .pagination > li > a,
 .pagination > li > span {
   color: #ff4040;
