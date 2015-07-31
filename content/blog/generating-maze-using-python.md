@@ -1,6 +1,8 @@
 ---
 date: 2007-08-02T03:11:49+01:00
 title: Generating Maze using Python
+aliases:
+    - /blog/2007/08/02/Generating-Maze-using-Python/
 ---
 
 Do you like mazes?
