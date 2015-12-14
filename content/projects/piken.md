@@ -1,6 +1,5 @@
 ---
 date: 2015-12-12T20:08:55+01:00
-draft: true
 title: piken
 project_description: CLI tool to search unicode data backed by SQLite3
 ---
