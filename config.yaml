@@ -5,6 +5,8 @@ languageCode: en-us
 MetaDataFormat: yaml
 pluralizeListTitles: false
 disqusShortname: mornie
+author:
+    name: "Daniele Tricoli"
 permalinks:
     blog: /blog/:year/:month/:day/:filename/
 taxonomies:
