@@ -5,7 +5,7 @@ project_description: Simple tool to manage receipts
 ---
 
 **pypel** (available under the BSD license) is a is a simple tool to manage
-receipts. It uses XMP to store metatada inside receipts so you can share them
+receipts. It uses XMP to store metadata inside receipts so you can share them
 in a very easy way.
 
 For more information browse the documentation on [pypel.rtfd.org][docs].
