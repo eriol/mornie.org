@@ -9,7 +9,7 @@ build: clean
 	@hugo
 
 upload:
-	rsync -a public/ mornie.org:/srv/www/www.mornie.org/html/
+	rsync -a public/ mornie.org:/srv/www/mornie.org/html/
 
 serve:
 	@hugo server --buildDrafts --buildFuture --watch
