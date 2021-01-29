@@ -7,7 +7,7 @@ when:
 
 steps:
   - name: build
-    image: alpine/edge
+    image: alpine:edge
     commands:
       - apk update && apk add --no-cache hugo
       - hugo
