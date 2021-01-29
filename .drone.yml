@@ -17,7 +17,7 @@ steps:
         mkdir ~/.ssh/
         echo "StrictHostKeyChecking=no" >> ~/.ssh/config
         echo $SSH_KEY > ~/.ssh/key
-      - rsync -rP -e "ssh -p $PORT -i ~/.ssh/key" public/ "${USERNAME}@${HOST}:${DEPLOY_PATH}"
+      - rsync -rP -e "ssh -p $PORT -i ~/.ssh/key" public/ "$USERNAME@$HOST:$DEPLOY_PATH"
     environment:
       SSH_KEY:
         from_secret: ssh_key
