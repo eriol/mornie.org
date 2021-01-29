@@ -24,5 +24,8 @@ steps:
         from_secret: deploy_path
     commands:
       - apk update && apk add --no-cache ca-certificates bash openssh-client rsync
-      - mkdir ~/.ssh/ echo && "StrictHostKeyChecking=no" >> ~/.ssh/config && echo ${SSH_KEY} > ~/.ssh/key
-      - rsync -rP -e "ssh -p ${PORT} -i ~/.ssh/key" public/ ${USERNAME}@${HOST}:${DEPLOY_PATH}
+      - |
+        mkdir ~/.ssh/
+        echo "StrictHostKeyChecking=no" >> ~/.ssh/config
+        echo ${SSH_KEY} > ~/.ssh/key
+      - rsync -rP -e \"ssh -p ${PORT} -i ~/.ssh/key\" public/ ${USERNAME}@${HOST}:${DEPLOY_PATH}
