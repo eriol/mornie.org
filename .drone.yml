@@ -15,7 +15,7 @@ steps:
       SSH_KEY:
         from_secret: ssh_key
       USERNAME:
-        fron_secret: username
+        from_secret: username
       PORT:
         from_secret: port
       HOST:
