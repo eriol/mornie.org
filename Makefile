@@ -1,15 +1,10 @@
-.PHONY: deploy clean build upload serve 
-
-deploy: build upload
-
-clean:
-	rm -rf public
+.PHONY: clean build serve
 
 build: clean
 	@hugo
 
-upload:
-	rsync -a public/ mornie.org:/srv/www/mornie.org/html/
+clean:
+	rm -rf public
 
 serve:
 	@hugo server --buildDrafts --buildFuture --watch
