@@ -1,10 +1,10 @@
 .PHONY: clean build serve
 
 build: clean
-	@hugo
+	@zola build
 
 clean:
 	rm -rf public
 
 serve:
-	@hugo server --buildDrafts --buildFuture --watch
+	@zola serve
