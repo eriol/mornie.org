@@ -1,3 +1,3 @@
 # Daniele Tricoli's Website
 
-Source for http://mornie.org, made with ❤ using [Hugo](http://gohugo.io).
+Source of [https://mornie.org](https://mornie.org).
