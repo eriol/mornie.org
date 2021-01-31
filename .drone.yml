@@ -1,3 +1,4 @@
+---
 kind: pipeline
 type: docker
 name: default
@@ -31,3 +32,7 @@ steps:
         from_secret: host
       DEPLOY_PATH:
         from_secret: deploy_path
+
+trigger:
+  branch:
+    - main
