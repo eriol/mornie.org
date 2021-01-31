@@ -7,8 +7,8 @@ steps:
   - name: build
     image: alpine:edge
     commands:
-      - apk update && apk add --no-cache hugo
-      - hugo
+      - apk update && apk add --no-cache zola
+      - zola build
 
   - name: deploy
     image: alpine:edge
