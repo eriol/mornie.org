@@ -1,7 +1,8 @@
----
-date: 2007-04-08T15:40:03+01:00
-title: Debian GNU/Linux 4.0 released
----
++++
+date = 2007-04-08T15:40:03+01:00
+title = "Debian GNU/Linux 4.0 released"
+aliases = ["blog/2007/04/08/debian-gnulinux-40-released"]
++++
 
 From the [news](http://www.debian.org/News/2007/20070408):
 

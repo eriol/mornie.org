@@ -1,10 +1,10 @@
----
-date: 2010-12-01T22:00:41+01:00
-title: django-c5filemanager 0.1 released!
-tags:
-- django
-- python
----
++++
+date = 2010-12-01T22:00:41+01:00
+title = "django-c5filemanager 0.1 released!"
+aliases = ["blog/2010/12/01/django-c5filemanager-01-released"]
+[taxonomies]
+tags = ["django", "python"]
++++
 
 The first public release of [django-c5filemanager](/projects/django-c5filemanager/)
 is out! :)
