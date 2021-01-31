@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ config.title }}</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/mornie.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation"><a href="/">Home</a></li>
+            <li role="presentation"><a href="/blog/">Blog</a></li>
+            <li role="presentation"><a href="/projects/">Projects</a></li>
+            <li role="presentation"><a href="https://noa.mornie.org/eriol">Code</a></li>
+          </ul>
+        </nav>
+        <h1>mornie.org</h1>
+      </div>
+      <div id="painting"></div>
+      {% block content %}{% endblock %}
+      <hr />
+      <footer>
+        <p>Copyright &copy; 2007-2021 Daniele 'eriol' Tricoli</p>
+        <p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.en_US">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+      </footer>
+    </div>
+  </body>
+</html>

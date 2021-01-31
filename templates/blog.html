@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+<div class="col-lg-12">
+  {% for page in paginator.pages %}
+   <article>
+      <header>
+      <h2><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h2>
+      <span>
+        {{ page.date | date(format="%b %e, %Y") }} &middot;
+        {{ (page.word_count + 212) / 213  | int }} minute read
+      </span>
+      </header>
+      <p>{{ page.description }}</p>
+      {% if page.taxonomies.categories or page.taxonomies.tags %}
+        <ul class="list-unstyled">
+          {% if page.taxonomies.tags %}
+            <li>
+              {% for tag in page.taxonomies.tags %}
+                <a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}">
+                  <span class="label label-default">#{{ tag }}</span>
+                </a>
+              {% endfor %}
+            </li>
+          {% endif %}
+        </ul>
+      {% endif %}
+      <a href="{{ page.permalink }}">Read full entry &rarr;</a>
+   </article>
+  {% endfor %}
+  <nav aria-label="Page navigation">
+    <ul class="pagination">
+      <li class="page-item">
+        <a href="{{ paginator.first }}" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+      </li>
+      <li class="page-item{% if not paginator.previous %} disabled{% endif%}">
+        <a {%if paginator.previous%}href="{{ paginator.previous }}"{% endif%} class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+      </li>
+      {% for i in range(end=paginator.number_pagers) %}
+        <li class="page-item{% if loop.index == paginator.current_index %} active{% endif %}">
+          <a class="page-link" href="{{ paginator.base_url ~ loop.index ~ '/' }}">{{ loop.index }}</a>
+        </li>
+      {% endfor %}
+      <li class="page-item{% if not paginator.next %} disabled{% endif%}">
+        <a {%if paginator.next%}href="{{ paginator.next }}"{% endif%} class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="{{ paginator.last }}" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      </li>
+    </ul>
+  </nav>
+</div>
+</div>
+{% endblock content %}
