@@ -1,7 +1,8 @@
----
-date: 2007-05-06T08:36:25+01:00
-title: RSS Feeds a Go-Go!
----
++++
+date = 2007-05-06T08:36:25+01:00
+title = "RSS Feeds a Go-Go!"
+aliases = ["blog/2007/05/06/rss-feeds-go-go"]
++++
 
 Finally I had the time to add [RSS feeds](https://en.wikipedia.org/wiki/RSS)! I
 hope you enjoy them. :)

@@ -1,14 +1,12 @@
----
-date: 2007-03-25T16:30:29+01:00
-title: Playing with ctypes and libcaca
-aliases:
-- /blog/2007/03/25/Playing-with-ctypes-and-libcaca/
-tags:
-- ctypes
-- libcaca
-- python
-- snake
----
++++
+date = 2007-03-25T16:30:29+01:00
+title = "Playing with ctypes and libcaca"
+aliases = [
+    "blog/2007/03/25/Playing-with-ctypes-and-libcaca"
+]
+[taxonomies]
+tags = ["ctypes", "libcaca", "python", "snake"]
++++
 
 [ctypes](http://docs.python.org/dev/lib/module-ctypes.html) is a foreign
 function interface for Python. It allows to call functions in dlls/shared
@@ -27,7 +25,7 @@ features:
  * dithering of colour images;
  * advanced text canvas operations (blitting, rotations).
 
-{{< figure src="/media/blog/snake.py.png" alt="snake.py screenshot" >}}
+![snake.py screenshot](/media/blog/snake.py.png)
 
 **Update 2009/10/11:** libcaca API changed so this entry in now obsolete but
 snake.py example works: you can read the source to get in touch with the new
@@ -191,7 +189,8 @@ while True:
     time.sleep(0.1)
 ```
 
-The complete example is here: [snake.py](http://hg.mornie.org/misc/file/tip/snake.py).
+The complete example is here:
+[snake.py](https://noa.mornie.org/eriol/misc/src/branch/main/snake.py).
 
 **Update 2007/10/20:** [Sam Hocevar](http://sam.zoy.org/) pointed me about
 importance of checking caca_get_event's return value, otherwise from time to

@@ -1,9 +1,12 @@
----
-date: 2007-04-26T00:34:12+01:00
-title: A reminder using GTK shaped window
----
++++
+date = 2007-04-26T00:34:12+01:00
+title = "A reminder using GTK shaped window"
+aliases = ["blog/2007/04/26/reminder-using-gtk-shaped-window"]
+[taxonomies]
+tags = ["python"]
++++
 
-The [GNU/Linux User Group Catania](http://catania.linux.it/) meets the last
+The [GNU/Linux User Group Catania](https://catania.linux.it/) meets the last
 thursday of every month. Usually a reminder is sent to mailing list by someone,
 but the other day a friend of mine started a «reminder contest».
 
@@ -35,7 +38,7 @@ It's time to write the GUI part!
 
 An image is worth a thousand words.
 
-{{< figure src="/media/blog/preminder.png" alt="preminder 100% screenshot" >}}
+![preminder 100% screenshot](/media/blog/preminder.png)
 
 Yes, the **pizza** is our window :)
 
@@ -69,7 +72,7 @@ To masks out everything except for the image we have to use
 self.window.shape_combine_mask(self.mask, 0, 0)
 ```
 
-{{< figure src="/media/blog/preminder2.png" alt="preminder 60% screenshot" >}}
+![preminder 60% screenshot](/media/blog/preminder2.png)
 
 Changing the window itself as the time for the appointment approaches, can be
 useful.
@@ -106,7 +109,7 @@ useful.
 
 We have to change only the mask to obtain the desired effect.
 
-{{< figure src="/media/blog/preminder3.png" alt="preminder 30% screenshot" >}}
+![preminder 30% screenshot](/media/blog/preminder3.png)
 
 Checking for last thursday of every month can be done in few line of code using
 [dateutil](http://labix.org/python-dateutil):

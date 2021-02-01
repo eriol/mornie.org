@@ -1,9 +1,13 @@
----
-date: 2007-01-10T16:06:10+01:00
-title: "Storing binary data in SQLite"
-aliases:
-    - /blog/2007/01/10/Storing-binary-data-in-SQLite/
----
++++
+date = 2007-01-10T16:06:10+01:00
+title = "Storing binary data in SQLite"
+aliases = [
+    "blog/2007/01/10/Storing-binary-data-in-SQLite",
+    "blog/2007/01/10/storing-binary-data-in-sqlite"
+]
+[taxonomies]
+tags = ["python"]
++++
 
 Storing images into a database is not common, usually you store only the file
 name, but sometimes it can be useful. Think you must log the position of several
