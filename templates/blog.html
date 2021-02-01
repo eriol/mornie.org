@@ -9,7 +9,7 @@
       <h2><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h2>
       <span>
         {{ page.date | date(format="%b %e, %Y") }} &middot;
-        {{ (page.word_count + 212) / 213  | int }} minute read
+        {{ page.reading_time }} minute read
       </span>
       </header>
       <p>{{ page.description }}</p>
