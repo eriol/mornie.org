@@ -4,13 +4,13 @@
 <div class="row">
 <div class="col-lg-12">
   {% for page in paginator.pages %}
-   <article>
+    <article>
       <header>
-      <h2><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h2>
-      <span>
-        {{ page.date | date(format="%b %e, %Y") }} &middot;
-        {{ page.reading_time }} minute read
-      </span>
+        <h2><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h2>
+        <span>
+          {{ page.date | date(format="%b %e, %Y") }} &middot;
+          {{ page.reading_time }} minute read
+        </span>
       </header>
       <p>{{ page.description }}</p>
       {% if page.taxonomies.categories or page.taxonomies.tags %}
@@ -27,7 +27,7 @@
         </ul>
       {% endif %}
       <a href="{{ page.permalink }}">Read full entry &rarr;</a>
-   </article>
+    </article>
   {% endfor %}
   <nav aria-label="Page navigation">
     <ul class="pagination">
