@@ -1,14 +1,12 @@
----
-date: 2012-12-22T16:22:54+01:00
-title: How to fix CKEditor 4 default theme in Django admin
-tags:
-- admin
-- ckeditor4
-- django
-- python
----
++++
+date = 2012-12-22T16:22:54+01:00
+title = "How to fix CKEditor 4 default theme in Django admin"
+aliases = ["blog/2012/12/22/how-fix-ckeditor-4-default-theme-django-admin"]
+[taxonomies]
+tags = ["admin", "ckeditor4", "django", "python"]
++++
 
-[CKEditor](http://ckeditor.com/) 4 default theme, [Moono](http://ckeditor.com/addon/moono),
+[CKEditor](https://ckeditor.com/) 4 default theme, [mOOno](https://ckeditor.com/cke4/addon/moono),
 is very nice and has a good set of features:
 
  * neutral design that fits all situations;
@@ -19,7 +17,7 @@ is very nice and has a good set of features:
 
 But inside Django admin there is a little layout problem:
 
-{{< figure src="/media/blog/moono-without-fix.png" alt="moono without fix" >}}
+![image of moono without fix](/media/blog/moono-without-fix.png)
 
 To fix this issue you may use the following css snippet:
 
@@ -33,5 +31,4 @@ div>.cke_chrome {
 
 The result is this:
 
-
-{{< figure src="/media/blog/moono-with-fix.png" alt="moono with fix" >}}
+![image of moono with fix](/media/blog/moono-with-fix.png)

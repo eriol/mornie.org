@@ -1,16 +1,15 @@
----
-date: 2013-11-06T19:55:04+01:00
-title: How to load an image from memory in Kivy
-tags:
-- image
-- kivy
-- python
----
++++
+date = 2013-11-06T19:55:04+01:00
+title = "How to load an image from memory in Kivy"
+aliases = ["blog/2013/11/06/how-load-image-memory-kivy"]
+[taxonomies]
+tags = ["image", "kivy", "python"]
++++
 
 Sometime you may have the need to load an image already in memory instead of
-use one of the several ways [Kivy](http://kivy.org/) provides to load images.
+use one of the several ways [Kivy](https://kivy.org/) provides to load images.
 
-{{< figure src="/media/blog/kivy_memory_image.png" alt="kivy memory image" >}}
+![kivy memory image](/media/blog/kivy_memory_image.png)
 
 I had this need for a project of mine so I came up with the following code (I
 was inspired by [this thread](https://groups.google.com/forum/#!topic/kivy-users/l-3FJ2mA3qI)).
@@ -104,9 +103,9 @@ if __name__ == '__main__':
 `cardioid`, `polar_plot` and `fig2png` are simply support functions to simulate
 an image already loaded in memory. My actual use case is different: I have
 images as BLOB inside a SQLite database (just like I described
-[years ago](/blog/2007/01/10/storing-binary-data-in-sqlite/)). The real work is
+[years ago](@/blog/storing-binary-data-in-sqlite.md)). The real work is
 done by `MemoryImage`'s `on_memory_data` method, taking advantage of Kivy
 automatic property binding.
 
 You can download the whole example from here:
-[kivy_memory_image.py](http://hg.mornie.org/misc/raw-file/tip/blog/kivy_memory_image.py).
+[kivy_memory_image.py](https://noa.mornie.org/eriol/misc/raw/branch/main/blog/kivy_memory_image.py).

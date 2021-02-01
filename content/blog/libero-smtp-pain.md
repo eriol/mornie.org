@@ -1,6 +1,7 @@
 +++
 date = "2006-12-28T03:06:00+01:00"
 title = "Libero SMTP pain :("
+aliases = ["blog/2006/12/28/libero-smtp-pain"]
 +++
 
 Since few days the SMTP server of my [ISP](http://internet.libero.it/) has
