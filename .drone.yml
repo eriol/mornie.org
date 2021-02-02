@@ -20,7 +20,7 @@ steps:
         chmod 0700 ~/.ssh/config
         echo "$SSH_KEY" > ~/.ssh/key
         chmod 0600 ~/.ssh/key
-      - rsync -rP -e "ssh -p $PORT -i ~/.ssh/key" public/ "$USERNAME@$HOST:$DEPLOY_PATH"
+      - rsync -rP --delete -e "ssh -p $PORT -i ~/.ssh/key" public/ "$USERNAME@$HOST:$DEPLOY_PATH"
     environment:
       SSH_KEY:
         from_secret: ssh_key
