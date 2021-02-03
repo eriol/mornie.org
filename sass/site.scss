@@ -1,0 +1,102 @@
+$primary: #ff4040;
+
+@import './_vendor/bootstrap-5.0.0-beta1/functions';
+@import './_vendor/bootstrap-5.0.0-beta1/variables';
+@import './_vendor/bootstrap-5.0.0-beta1/mixins';
+
+@import './_vendor/bootstrap-5.0.0-beta1/root';
+@import './_vendor/bootstrap-5.0.0-beta1/reboot';
+@import './_vendor/bootstrap-5.0.0-beta1/utilities';
+@import './_vendor/bootstrap-5.0.0-beta1/utilities/api';
+@import './_vendor/bootstrap-5.0.0-beta1/containers';
+@import './_vendor/bootstrap-5.0.0-beta1/grid';
+@import './_vendor/bootstrap-5.0.0-beta1/navbar';
+@import './_vendor/bootstrap-5.0.0-beta1/nav';
+@import './_vendor/bootstrap-5.0.0-beta1/type';
+@import './_vendor/bootstrap-5.0.0-beta1/badge';
+@import './_vendor/bootstrap-5.0.0-beta1/pagination';
+
+@import url(https://fonts.googleapis.com/css?family=Artifika|Roboto|Roboto+Slab);
+
+$font-text-title: 'Artifika', serif;
+$color-title: #a60000;
+
+body .container {
+    max-width: 800px;
+}
+
+body {
+    background: url("../images/grey.png");
+
+    &.container {
+        max-width: 800px;
+    }
+}
+
+blockquote {
+    font-size: 1rem !important;
+}
+
+.quote {
+    padding-left: 1rem;
+    border-left: 1px solid #e9ecef;
+    border-left-width: .25rem;
+}
+
+.d-grid ul {
+    margin-bottom: 0;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+.navbar-brand {
+    font-family: $font-text-title;
+    color: $color-title;
+    font-size: 1.5rem;
+    padding-top: 0px;
+}
+
+h1, h2, h3, h4 {
+    font-size: 1.5rem;
+    font-family: $font-text-title;
+    color: $color-title;
+}
+
+.badge > a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+        color: white;
+    }
+}
+
+a {
+  color: #ff4040;
+  &:hover {
+      color: #008500;
+  }
+}
+
+pre {
+    padding: 9.5px;
+    border-radius: 4px;
+}
+
+#painting {
+  border-radius: 8px;
+  height: 150px;
+  margin-bottom: 10px;
+  background: url("../images/background.jpg") no-repeat;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 4px;
+}
+
+#footer-nav {
+    margin-top: 1rem;
+}
+
+article img {
+  display: block;
+  margin: auto;
+}
