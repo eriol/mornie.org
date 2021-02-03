@@ -2,34 +2,41 @@
 
 {% block content %}
 <div class="row">
-<div class="col-lg-12">
-  {% for page in paginator.pages %}
-    <article>
-      <header>
-        <h2><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h2>
-        <span>
-          {{ page.date | date(format="%b %e, %Y") }} &middot;
-          {{ page.reading_time }} minute read
-        </span>
-      </header>
-      <p>{{ page.description }}</p>
-      {% if page.taxonomies.categories or page.taxonomies.tags %}
-        <ul class="list-unstyled">
-          {% if page.taxonomies.tags %}
-            <li>
-              {% for tag in page.taxonomies.tags %}
-                <a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}">
-                  <span class="label label-default">#{{ tag }}</span>
-                </a>
-              {% endfor %}
-            </li>
-          {% endif %}
-        </ul>
-      {% endif %}
-      <a href="{{ page.permalink }}">Read full entry &rarr;</a>
-    </article>
-  {% endfor %}
-  <nav aria-label="Page navigation">
+  <div class="d-grid gap-4">
+    {% for page in paginator.pages %}
+      <section>
+        <header>
+          <h2><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h2>
+          <span>
+            {{ page.date | date(format="%b %e, %Y") }} &middot;
+            {{ page.reading_time }} minute read
+          </span>
+        </header>
+        {% if page.description %}<p>{{ page.description }}</p>{% endif %}
+        {% if page.taxonomies.categories or page.taxonomies.tags %}
+          <ul class="list-unstyled">
+            {% if page.taxonomies.tags %}
+              <li>
+                Tags:
+                {% for tag in page.taxonomies.tags %}
+                    <span class="badge bg-secondary">
+                      <a href="{{ get_taxonomy_url(kind="tags", name=tag) | safe }}">
+                        #{{ tag }}
+                      </a>
+                    </span>
+                {% endfor %}
+              </li>
+            {% endif %}
+          </ul>
+        {% endif %}
+        <a class="no-underline" href="{{ page.permalink }}">Read full entry &rarr;</a>
+      </section>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="row">
+  <nav id="footer-nav" aria-label="Page navigation">
     <ul class="pagination">
       <li class="page-item">
         <a href="{{ paginator.first }}" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
@@ -50,6 +57,5 @@
       </li>
     </ul>
   </nav>
-</div>
 </div>
 {% endblock content %}

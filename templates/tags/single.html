@@ -1,10 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="row">
-  <article class="col-lg-12">
+  <header>
     <h1>{{ term.name }}</h1>
+  </header>
+  <div class="d-grid gap-3">
     {% for page in term.pages %}
-    <article>
+    <section>
       <header>
         <h2><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h2>
         <span>
@@ -12,10 +14,10 @@
           {{ page.reading_time }} minute read
         </span>
       </header>
-      <p>{{ page.description }}</p>
-      <a href="{{ page.permalink }}">Read full entry &rarr;</a>
-    </article>
+      {% if page.description %}<p>{{ page.description }}</p>{% endif %}
+      <a class="no-underline" href="{{ page.permalink }}">Read full entry &rarr;</a>
+    </section>
     {% endfor %}
-  </article>
+  </div>
 </div>
 {% endblock content %}

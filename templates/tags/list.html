@@ -11,11 +11,11 @@
       <ul class="list-unstyled">
       {% for term in terms %}
         <li>
-          <a href="{{ term.permalink | safe }}">
-            <span class="label label-default">
-              #{{ term.name }} ({{ term.pages | length }})
+            <span class="badge bg-secondary">
+              <a href="{{ term.permalink | safe }}">
+                #{{ term.name }} ({{ term.pages | length }})
+              </a>
             </span>
-          </a>
         </li>
       {% endfor %}
       </ul>

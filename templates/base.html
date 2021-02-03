@@ -7,22 +7,20 @@
     {% if config.generate_feed %}
       <link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path="atom.xml", trailing_slash=false) }}">
     {% endif %}
-
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/mornie.css">
+    <link rel="stylesheet" href="/site.css">
   </head>
   <body>
     <div class="container">
-      <div class="header clearfix">
-        <nav>
-          <ul class="nav nav-pills pull-right">
-            <li role="presentation"><a href="/">Home</a></li>
-            <li role="presentation"><a href="/blog/">Blog</a></li>
-            <li role="presentation"><a href="https://noa.mornie.org/eriol">Code</a></li>
-          </ul>
-        </nav>
-        <h1>mornie.org</h1>
-      </div>
+      <nav class="navbar nav-pills">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1">mornie.org</span>
+          <div class="d-flex">
+            <a class="nav-link " href="/">Home</a>
+            <a class="nav-link" href="/blog/">Blog</a>
+            <a class="nav-link" href="https://noa.mornie.org/eriol">Code</a>
+          </div>
+        </div>
+      </nav>
       <div id="painting"></div>
       {% block content %}{% endblock %}
       <hr />
