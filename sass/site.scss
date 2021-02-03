@@ -16,9 +16,6 @@ $primary: #ff4040;
 @import './_vendor/bootstrap-5.0.0-beta1/badge';
 @import './_vendor/bootstrap-5.0.0-beta1/pagination';
 
-@import url(https://fonts.googleapis.com/css?family=Artifika|Roboto|Roboto+Slab);
-
-$font-text-title: 'Artifika', serif;
 $color-title: #a60000;
 
 body .container {
@@ -52,7 +49,6 @@ blockquote {
 }
 
 .navbar-brand {
-    font-family: $font-text-title;
     color: $color-title;
     font-size: 1.5rem;
     padding-top: 0px;
@@ -60,7 +56,6 @@ blockquote {
 
 h1, h2, h3, h4 {
     font-size: 1.5rem;
-    font-family: $font-text-title;
     color: $color-title;
 }
 
