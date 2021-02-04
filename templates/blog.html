@@ -35,27 +35,29 @@
   </div>
 </div>
 
-<div class="row">
-  <nav id="footer-nav" aria-label="Page navigation">
-    <ul class="pagination">
-      <li class="page-item">
-        <a href="{{ paginator.first }}" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
-      </li>
-      <li class="page-item{% if not paginator.previous %} disabled{% endif%}">
-        <a {%if paginator.previous%}href="{{ paginator.previous }}"{% endif%} class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
-      </li>
-      {% for i in range(end=paginator.number_pagers) %}
-        <li class="page-item{% if loop.index == paginator.current_index %} active{% endif %}">
-          <a class="page-link" href="{{ paginator.base_url ~ loop.index ~ '/' }}">{{ loop.index }}</a>
+<div class="row justify-content-md-center">
+  <div class="col-md-auto">
+    <nav id="footer-nav" aria-label="Page navigation">
+      <ul class="pagination">
+        <li class="page-item">
+          <a href="{{ paginator.first }}" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
         </li>
-      {% endfor %}
-      <li class="page-item{% if not paginator.next %} disabled{% endif%}">
-        <a {%if paginator.next%}href="{{ paginator.next }}"{% endif%} class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="{{ paginator.last }}" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
-      </li>
-    </ul>
-  </nav>
+        <li class="page-item{% if not paginator.previous %} disabled{% endif%}">
+          <a {%if paginator.previous%}href="{{ paginator.previous }}"{% endif%} class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+        </li>
+        {% for i in range(end=paginator.number_pagers) %}
+          <li class="page-item{% if loop.index == paginator.current_index %} active{% endif %}">
+            <a class="page-link" href="{{ paginator.base_url ~ loop.index ~ '/' }}">{{ loop.index }}</a>
+          </li>
+        {% endfor %}
+        <li class="page-item{% if not paginator.next %} disabled{% endif%}">
+          <a {%if paginator.next%}href="{{ paginator.next }}"{% endif%} class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+        </li>
+        <li class="page-item">
+          <a href="{{ paginator.last }}" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </div>
 {% endblock content %}
