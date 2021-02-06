@@ -11,27 +11,29 @@
   </head>
   <body>
     <div class="container">
-      <nav class="navbar nav-pills">
-        <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1">
-            <a class="nav-link " href="/">mornie.org</a>
-          </span>
-          <div class="d-flex">
-            <a class="nav-link" href="/blog/">blog</a>
-            <a class="nav-link" href="https://noa.mornie.org/eriol" target="_blank" rel="noreferrer">code</a>
-            <a class="nav-link" href="{{ get_url(path="atom.xml", trailing_slash=false) }}">rss</a>
+      <div class="col-8 offset-2">
+        <nav class="navbar nav-pills">
+          <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">
+              <a class="nav-link " href="/">mornie.org</a>
+            </span>
+            <div class="d-flex">
+              <a class="nav-link" href="/blog/">blog</a>
+              <a class="nav-link" href="https://noa.mornie.org/eriol" target="_blank" rel="noreferrer">code</a>
+              <a class="nav-link" href="{{ get_url(path="atom.xml", trailing_slash=false) }}">rss</a>
+            </div>
           </div>
-        </div>
-      </nav>
-      <div id="painting"></div>
-      {% block content %}{% endblock %}
-      <hr />
-      <footer>
-        <p>Copyright &copy; 2007-2021 Daniele 'eriol' Tricoli</p>
-        <p>
-          This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
-        </p>
-      </footer>
+        </nav>
+        <div id="painting"></div>
+        {% block content %}{% endblock %}
+        <hr />
+        <footer>
+          <p>Copyright &copy; 2007-2021 Daniele 'eriol' Tricoli</p>
+          <p>
+            This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+          </p>
+        </footer>
+      </div>
     </div>
   </body>
 </html>

@@ -18,16 +18,8 @@ $primary: #ff4040;
 
 $color-title: #a60000;
 
-body .container {
-    max-width: 800px;
-}
-
 body {
     background: url("../images/grey.png");
-
-    &.container {
-        max-width: 800px;
-    }
 }
 
 blockquote {
