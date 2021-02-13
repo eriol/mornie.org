@@ -7,4 +7,4 @@ clean:
 	rm -rf public
 
 serve:
-	@zola serve
+	@zola serve --drafts
