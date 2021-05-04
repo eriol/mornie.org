@@ -11,7 +11,7 @@ as one of my first 3D projects because it's quite easy to do, and post pandemic
 it would be fun to play with friends.
 
 So I looked at a CAD I could use, as someone who never used a CAD before, and
-discovered [sovespace](https://solvespace.com/index.pl).
+discovered [solvespace](https://solvespace.com/index.pl).
 
 In a couple of hours I made the dice and the first face, but then I stopped
 working on it since I had to setup my new VPS. Last Friday I took some time to
