@@ -86,3 +86,16 @@ article img {
   max-width: 75%;
   border-radius: 8px;
 }
+
+.footnote-definition {
+    display: flex;
+}
+
+article > .footnote-definition
+{
+    margin-top: 3em;
+}
+article > .footnote-definition ~ .footnote-definition
+{
+    margin-top: 0em;
+}
