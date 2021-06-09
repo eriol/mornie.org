@@ -26,6 +26,25 @@
 <div class="row">
   <section>
     <header>
+      <h2>Latest posts from my blog</h2>
+    </header>
+    <ul>
+      {% set section = get_section(path="blog/_index.md") %}
+      {% for page in section.pages %}
+          <li>
+            <a href="{{ page.permalink | safe }}">{{ page.title }}</a>,
+            posted on {{ page.date | date(format="%b %e, %Y") }}
+          </li>
+          {% if loop.index >= 5 %}
+            {% break %}
+          {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
+</div>
+<div class="row">
+  <section>
+    <header>
       <h2>Contact Me</h2>
     </header>
     <dl class="row">
