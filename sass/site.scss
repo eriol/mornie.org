@@ -90,6 +90,12 @@ article img {
 
 .footnote-definition {
     display: flex;
+    font-size: 0.95rem;
+}
+
+.footnote-definition-label {
+    padding-top: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 article > .footnote-definition
