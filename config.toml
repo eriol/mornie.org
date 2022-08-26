@@ -1,4 +1,4 @@
-base_url = "mornie.org"
+base_url = "https://mornie.org"
 title = "Daniele 'eriol' Tricoli Website"
 compile_sass = true
 build_search_index = false
@@ -14,3 +14,4 @@ highlight_theme = "monokai"
 
 [extra]
 author = "Daniele Tricoli"
+domain = "mornie.org"
