@@ -1,4 +1,4 @@
-base_url = "https://mornie.org"
+base_url = "mornie.org"
 title = "Daniele 'eriol' Tricoli Website"
 compile_sass = true
 build_search_index = false
