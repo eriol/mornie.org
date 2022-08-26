@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 
+{% block title %}{{ section.title }} - {{ super() }}{% endblock title %}
+
 {% block content %}
 <div class="row">
   <div class="d-grid gap-4">
