@@ -35,5 +35,14 @@
         </footer>
       </div>
     </div>
+    <script>
+    window.goatcounter = {
+        path: function(p) { return location.host + p }
+    }
+    </script>
+    <script data-goatcounter="https://stats.mornie.org/count" async src="//stats.mornie.org/count.js"></script>
+    <noscript>
+        <img src="https://stats.mornie.org/count?p={{ config.extra.domain }}{{ current_path | safe }}&t={% block stats_title %}{% if page.title %}{{ page.title }}{% else %}{{ section.title }}{% endif %}{% endblock stats_title %}" alt="tracking pixel to count visitors when JavaScript is disabled">
+    </noscript>
   </body>
 </html>
