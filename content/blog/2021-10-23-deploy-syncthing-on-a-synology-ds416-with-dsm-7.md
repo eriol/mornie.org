@@ -9,7 +9,7 @@ After updating my NAS, a Synology DS416, to DSM 7 I decided to deploy
 [Syncthing](https://syncthing.net/) on it. Synology supports containers in its
 latest NAS but not in DS416 and the suggested way to deploy is to use docker.
 
-There is an alternative fortunately since the NAS uses an 
+There is an alternative fortunately since the NAS uses an
 `ARMv7 Processor rev 4 (v7l)` and Syncthing is written in Go, it's
 really easy to cross-compile from source and just copy the binary into the NAS.
 
