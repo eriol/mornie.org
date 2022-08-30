@@ -2,7 +2,7 @@
 date = 2021-10-23 01:44:05+02:00
 title = "Deploy Syncthing on a Synology DS416 with DSM 7"
 [taxonomies]
-tags = ["nas"]
+tags = ["nas", "homelab"]
 +++
 
 After updating my NAS, a Synology DS416, to DSM 7 I decided to deploy
