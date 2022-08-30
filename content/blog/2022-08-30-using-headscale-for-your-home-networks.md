@@ -1,5 +1,4 @@
 +++
-draft = true
 date = 2022-08-30 06:23:43+02:00
 title = "Using headscale for your home networks"
 [taxonomies]
