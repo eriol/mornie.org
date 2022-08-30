@@ -26,7 +26,7 @@ CREATE TABLE map (
     name varchar(20) NOT NULL PRIMARY KEY,
     image_file blob NOT NULL
 );
-    
+
 CREATE TABLE logs (
     -- <your logs schema here>
 );
@@ -94,4 +94,4 @@ if __name__ == '__main__':
     Image.open(img).show()
 ```
 
-The whole exampleis here: [blobexample.py](/media/blog/blobexample.py).
+The whole example is here: [blobexample.py](/media/blog/blobexample.py).
