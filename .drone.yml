@@ -17,16 +17,6 @@ pipeline:
         echo "$SSH_KEY" > ~/.ssh/key
         chmod 0600 ~/.ssh/key
       - rsync -rP --delete -e "ssh -p $PORT -i ~/.ssh/key" public/ "$USERNAME@$HOST:$DEPLOY_PATH"
-    settings:
-      SSH_KEY:
-        from_secret: ssh_key
-      USERNAME:
-        from_secret: username
-      PORT:
-        from_secret: port
-      HOST:
-        from_secret: host
-      DEPLOY_PATH:
-        from_secret: deploy_path
+    secrets: [ssh_key, username, port, host, deploy_path]
 
 branches: main
