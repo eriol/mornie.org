@@ -1,16 +1,12 @@
 ---
-kind: pipeline
-type: docker
-name: default
-
-steps:
-  - name: build
+pipeline:
+  build:
     image: alpine:edge
     commands:
       - apk update && apk add --no-cache zola
       - zola build
 
-  - name: deploy
+  deploy:
     image: alpine:edge
     commands:
       - apk update && apk add --no-cache ca-certificates bash openssh-client rsync
@@ -21,7 +17,7 @@ steps:
         echo "$SSH_KEY" > ~/.ssh/key
         chmod 0600 ~/.ssh/key
       - rsync -rP --delete -e "ssh -p $PORT -i ~/.ssh/key" public/ "$USERNAME@$HOST:$DEPLOY_PATH"
-    environment:
+    settings:
       SSH_KEY:
         from_secret: ssh_key
       USERNAME:
@@ -32,6 +28,5 @@ steps:
         from_secret: host
       DEPLOY_PATH:
         from_secret: deploy_path
-    when:
-      branch:
-        - main
+
+branches: main
