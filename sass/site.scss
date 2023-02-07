@@ -16,11 +16,11 @@ $primary: #a60000;
 @import './_vendor/bootstrap-5.0.0-beta1/badge';
 @import './_vendor/bootstrap-5.0.0-beta1/pagination';
 
-$color-title: #a60000;
+$color-title: $primary;
 $color-blockquote: #a9a9a9;
 
 body {
-    background: #f3f3f3;
+    background: #fafafa;
 }
 
 .navbar {
