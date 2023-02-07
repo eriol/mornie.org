@@ -1,4 +1,4 @@
-$primary: #ff4040;
+$primary: #a60000;
 
 @import './_vendor/bootstrap-5.0.0-beta1/functions';
 @import './_vendor/bootstrap-5.0.0-beta1/variables';
@@ -66,9 +66,8 @@ h1, h2, h3, h4 {
 }
 
 a {
-  color: #ff4040;
   &:hover {
-      color: #008500;
+      color: #ff4040;
   }
 }
 
