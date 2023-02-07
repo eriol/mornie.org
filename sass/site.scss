@@ -17,9 +17,10 @@ $primary: #a60000;
 @import './_vendor/bootstrap-5.0.0-beta1/pagination';
 
 $color-title: #a60000;
+$color-blockquote: #a9a9a9;
 
 body {
-    background: #f0f0f0;
+    background: #f3f3f3;
 }
 
 .navbar {
@@ -34,7 +35,7 @@ blockquote {
     font-size: 1rem !important;
     font-style: italic;
     padding-left: 1rem;
-    border-left: 1px solid #e9ecef;
+    border-left: 1px solid $color-blockquote;
     border-left-width: .25rem;
 }
 
