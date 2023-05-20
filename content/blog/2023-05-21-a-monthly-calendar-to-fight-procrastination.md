@@ -1,5 +1,4 @@
 +++
-draft = true
 date = 2023-05-21 00:23:40+02:00
 title = "A monthly calendar to fight procrastination"
 [taxonomies]
