@@ -21,6 +21,7 @@ $color-blockquote: #a9a9a9;
 
 body {
     background: #f3f3f3;
+    font-size: 18px;
 }
 
 .navbar {
@@ -32,11 +33,11 @@ body {
 }
 
 blockquote {
-    font-size: 1rem !important;
+    font-size: 1em !important;
     font-style: italic;
-    padding-left: 1rem;
+    padding-left: 1em;
     border-left: 1px solid $color-blockquote;
-    border-left-width: .25rem;
+    border-left-width: .25em;
 }
 
 .blockquote-footer {
@@ -53,12 +54,13 @@ blockquote {
 
 .navbar-brand {
     color: $color-title;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     padding-top: 0px;
 }
 
-h1, h2, h3, h4 {
-    font-size: 1.5rem;
+h1, h2, h3, h4, h5 {
+    // font-size: 1.5rem;
+    font-style: italic;
     color: $color-title;
 }
 
@@ -82,7 +84,7 @@ pre {
 }
 
 #footer-nav {
-    margin-top: 1rem;
+    margin-top: 1em;
 }
 
 article img {
@@ -94,12 +96,12 @@ article img {
 
 .footnote-definition {
     display: flex;
-    font-size: 0.95rem;
+    font-size: 0.95em;
 }
 
 .footnote-definition-label {
-    padding-top: 0.5rem;
-    padding-right: 0.5rem;
+    padding-top: 0.5em;
+    padding-right: 0.5em;
 }
 
 article > .footnote-definition
