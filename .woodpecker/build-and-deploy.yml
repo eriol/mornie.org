@@ -1,5 +1,10 @@
 ---
-pipeline:
+
+when:
+  branch: main
+
+steps:
+
   build:
     image: alpine:edge
     commands:
@@ -18,5 +23,3 @@ pipeline:
         chmod 0600 ~/.ssh/key
       - rsync -rP --delete -e "ssh -p $PORT -i ~/.ssh/key" public/ "$USERNAME@$HOST:$DEPLOY_PATH"
     secrets: [ssh_key, username, port, host, deploy_path]
-
-branches: main
