@@ -1,17 +1,17 @@
 ---
 
 when:
-  branch: main
+  - branch: main
 
 steps:
 
-  build:
+  - build:
     image: alpine:edge
     commands:
       - apk update && apk add --no-cache zola
       - zola build
 
-  deploy:
+  - deploy:
     image: alpine:edge
     commands:
       - apk update && apk add --no-cache ca-certificates bash openssh-client rsync
