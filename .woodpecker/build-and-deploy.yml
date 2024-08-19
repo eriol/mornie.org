@@ -2,6 +2,7 @@
 
 when:
   - branch: main
+    event: push
 
 steps:
 
