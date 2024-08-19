@@ -1,8 +1,8 @@
 ---
 
 when:
-  - branch: main
-    event: push
+  - event: push
+    branch: main
 
 steps:
 
