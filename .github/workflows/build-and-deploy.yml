@@ -6,10 +6,21 @@ on:
     branches: [main]
 
 jobs:
-  build-and-publish:
-    runs-on: ubuntu-latest
+  build:
     container: alpine:edge
     steps:
       - uses: actions/checkout@v4
       - run: apk update && apk add --no-cache zola
       - run: zola build
+
+  publish:
+    needs: build
+    container: alpine:edge
+      - run: apk update && apk add --no-cache ca-certificates bash openssh-client rsync
+      - run: |
+        mkdir ~/.ssh/
+        echo -e "StrictHostKeyChecking=no\nUserKnownHostsFile=/dev/null" >> ~/.ssh/config
+        chmod 0700 ~/.ssh/config
+        echo "${{secrets.SSH_KEY}}" > ~/.ssh/key
+        chmod 0600 ~/.ssh/key
+      - run: rsync -rP --delete -e "ssh -p ${{secrets.PORT}} -i ~/.ssh/key" public/ "${{secrets.USERNAME}}@${{secrets.HOST}}:${{secrets.DEPLOY_PATH}}"
