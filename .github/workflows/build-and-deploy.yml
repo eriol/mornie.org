@@ -17,9 +17,8 @@ jobs:
   publish:
     needs: build
     runs-on: ubuntu-latest
-    container: alpine:edge
     steps:
-      - run: apk update && apk add --no-cache ca-certificates bash openssh-client rsync
+      - run: sudo apt-get update && sudo apt-get install ca-certificates bash openssh-client rsync
       - run: >
           mkdir -p ~/.ssh/
           echo -e "StrictHostKeyChecking=no\nUserKnownHostsFile=/dev/null" >> ~/.ssh/config
