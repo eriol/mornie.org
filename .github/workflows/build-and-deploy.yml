@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Install zola and build the site
         run: |
-          sudo stap install --edge zola
+          sudo snap install --edge zola
           zola build
       - name: Create cache for files to deploy
         uses: actions/cache/save@v4
