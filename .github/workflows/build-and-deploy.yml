@@ -11,6 +11,11 @@ jobs:
     container: alpine:edge
     steps:
       - uses: actions/checkout@v4
+      - name: Create cache for files to deploy
+        uses: actions/cache@v4
+        with:
+          path: public
+          key: public-key
       - run: apk update && apk add --no-cache zola
       - run: zola build
 
@@ -26,4 +31,9 @@ jobs:
           echo "${{secrets.SSH_KEY}}" > ~/.ssh/key
           chmod 0600 ~/.ssh/key
       - run: ls
+      - name: Restore cached file to deploy
+        uses: actions/cache/restore@v4
+        with:
+          path: public
+          key: public-key
       - run: rsync -rP --delete -e "ssh -p ${{secrets.PORT}} -i ~/.ssh/key" public/ "${{secrets.USERNAME}}@${{secrets.HOST}}:${{secrets.DEPLOY_PATH}}"
