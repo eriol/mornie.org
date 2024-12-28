@@ -15,7 +15,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: public
-          key: public-key
+          key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
       - run: apk update && apk add --no-cache zola
       - run: zola build
       - run: ls
@@ -36,5 +36,5 @@ jobs:
         uses: actions/cache/restore@v4
         with:
           path: public
-          key: public-key
+          key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
       - run: rsync -rP --delete -e "ssh -p ${{secrets.PORT}} -i ~/.ssh/key" public/ "${{secrets.USERNAME}}@${{secrets.HOST}}:${{secrets.DEPLOY_PATH}}"
