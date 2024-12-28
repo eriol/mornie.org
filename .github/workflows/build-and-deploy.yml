@@ -14,10 +14,11 @@ jobs:
       - run: apk update && apk add --no-cache zola
       - run: zola build
       - name: Create cache for files to deploy
-        uses: actions/cache@v4
+        uses: actions/cache/save@v4
         with:
-          path: ./public/
-          key: public-cache
+          path: |
+            public
+          key: ${{ runner.os }}-zola-${{ github.sha }}
       - run: ls
 
   publish:
@@ -34,7 +35,8 @@ jobs:
       - name: Restore cached file to deploy
         uses: actions/cache/restore@v4
         with:
-          path: ./public/
-          key: public-cache
+          path: |
+            public
+          key: ${{ runner.os }}-zola-${{ github.sha }}
       - run: ls
       - run: rsync -rP --delete -e "ssh -p ${{secrets.PORT}} -i ~/.ssh/key" public/ "${{secrets.USERNAME}}@${{secrets.HOST}}:${{secrets.DEPLOY_PATH}}"
