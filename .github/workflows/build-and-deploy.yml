@@ -8,18 +8,18 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: alpine:edge
     steps:
       - uses: actions/checkout@v4
-      - run: apk update && apk add --no-cache zola
-      - run: zola build
+      - name: Install zola and build the site
+        run: |
+          sudo stap install --edge zola
+          zola build
       - name: Create cache for files to deploy
         uses: actions/cache/save@v4
         with:
           path: |
             public
           key: ${{ runner.os }}-zola-${{ github.sha }}
-      - run: ls
 
   publish:
     needs: build
