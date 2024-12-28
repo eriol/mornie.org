@@ -18,6 +18,7 @@ jobs:
           key: public-key
       - run: apk update && apk add --no-cache zola
       - run: zola build
+      - run: ls
 
   publish:
     needs: build
