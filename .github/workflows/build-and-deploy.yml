@@ -11,13 +11,13 @@ jobs:
     container: alpine:edge
     steps:
       - uses: actions/checkout@v4
+      - run: apk update && apk add --no-cache zola
+      - run: zola build
       - name: Create cache for files to deploy
         uses: actions/cache@v4
         with:
           path: ./public/
           key: public-cache
-      - run: apk update && apk add --no-cache zola
-      - run: zola build
       - run: ls
 
   publish:
