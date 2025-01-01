@@ -5,7 +5,7 @@ title = "Moving to Proton Mail"
 tags = ["email"]
 +++
 
-After [almost 20 years](@blog/libero-smtp-pain.md), I decided to stop
+After [almost 20 years](@/blog/libero-smtp-pain.md), I decided to stop
 self-hosting my emails and I moved to Proton Mail.
 
 I did the switch 2 days ago and it went very smooth. To import my emails, I
