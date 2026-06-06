@@ -19,8 +19,13 @@ export function getReadingTime(body: string) {
   return Math.max(1, Math.ceil(words / 200));
 }
 
+// Remove date from slug.
+export function getPostSlug(slug: string) {
+  return slug.replace(/^\d{4}-\d{2}-\d{2}-/, '');
+}
+
 export function getPostUrl(slug: string) {
-  return `/blog/${slug}/`;
+  return `/blog/${getPostSlug(slug)}/`;
 }
 
 export function getTagUrl(tag: string) {

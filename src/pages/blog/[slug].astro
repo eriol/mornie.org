@@ -1,11 +1,11 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { getPosts } from '../../lib/blog';
+import { getPostSlug, getPosts } from '../../lib/blog';
 
 export async function getStaticPaths() {
   const posts = await getPosts();
   return posts.map((post) => ({
-    params: { slug: post.slug },
+    params: { slug: getPostSlug(post.slug) },
     props: { post },
   }));
 }
