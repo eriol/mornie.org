@@ -6,6 +6,6 @@ tags: []
 
 It was almost **green**:
 
-![my phone number](/media/blog/myphonenumber.png)
+![my phone number](../../images/blog/myphonenumber.png)
 
 :D

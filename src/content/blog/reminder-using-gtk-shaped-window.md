@@ -36,7 +36,7 @@ It's time to write the GUI part!
 
 An image is worth a thousand words.
 
-![preminder 100% screenshot](/media/blog/preminder.png)
+![preminder 100% screenshot](../../images/blog/preminder.png)
 
 Yes, the **pizza** is our window :)
 
@@ -70,7 +70,7 @@ To masks out everything except for the image we have to use
 self.window.shape_combine_mask(self.mask, 0, 0)
 ```
 
-![preminder 60% screenshot](/media/blog/preminder2.png)
+![preminder 60% screenshot](../../images/blog/preminder2.png)
 
 Changing the window itself as the time for the appointment approaches, can be
 useful.
@@ -107,7 +107,7 @@ useful.
 
 We have to change only the mask to obtain the desired effect.
 
-![preminder 30% screenshot](/media/blog/preminder3.png)
+![preminder 30% screenshot](../../images/blog/preminder3.png)
 
 Checking for last thursday of every month can be done in few line of code using
 [dateutil](http://labix.org/python-dateutil):

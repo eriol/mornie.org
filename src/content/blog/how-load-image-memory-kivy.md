@@ -7,7 +7,7 @@ tags: ["image", "kivy", "python"]
 Sometime you may have the need to load an image already in memory instead of
 use one of the several ways [Kivy](https://kivy.org/) provides to load images.
 
-![kivy memory image](/media/blog/kivy_memory_image.png)
+![kivy memory image](../../images/blog/kivy_memory_image.png)
 
 I had this need for a project of mine so I came up with the following code (I
 was inspired by [this thread](https://groups.google.com/forum/#!topic/kivy-users/l-3FJ2mA3qI)).

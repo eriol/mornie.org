@@ -6,6 +6,6 @@ tags: ["python"]
 
 Today, when I arrived at home I saw a package on the table in the living room:
 
-![Python in a Nutshell cover](/media/python_in_a_nutshell_2edition.jpg)
+![Python in a Nutshell cover](../../images/blog/python_in_a_nutshell_2edition.jpg)
 
 My first purchase on Amazon! :)

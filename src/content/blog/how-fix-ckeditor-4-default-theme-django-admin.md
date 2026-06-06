@@ -15,7 +15,7 @@ is very nice and has a good set of features:
 
 But inside Django admin there is a little layout problem:
 
-![image of moono without fix](/media/blog/moono-without-fix.png)
+![image of moono without fix](../../images/blog/moono-without-fix.png)
 
 To fix this issue you may use the following css snippet:
 
@@ -29,4 +29,4 @@ div>.cke_chrome {
 
 The result is this:
 
-![image of moono with fix](/media/blog/moono-with-fix.png)
+![image of moono with fix](../../images/blog/moono-with-fix.png)

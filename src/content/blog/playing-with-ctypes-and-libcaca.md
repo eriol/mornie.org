@@ -21,7 +21,7 @@ features:
  * dithering of colour images;
  * advanced text canvas operations (blitting, rotations).
 
-![snake.py screenshot](/media/blog/snake.py.png)
+![snake.py screenshot](../../images/blog/snake.py.png)
 
 **Update 2009/10/11:** libcaca API changed so this entry in now obsolete but
 snake.py example works: you can read the source to get in touch with the new
