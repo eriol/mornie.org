@@ -6,9 +6,9 @@ export async function getPosts() {
 }
 
 export function formatDate(date: Date, options: Intl.DateTimeFormatOptions = {}) {
-  return date.toLocaleDateString('en', {
-    month: 'short',
+  return date.toLocaleDateString('en-GB', {
     day: 'numeric',
+    month: 'short',
     year: 'numeric',
     ...options,
   });
