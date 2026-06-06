@@ -7,10 +7,12 @@ when:
 steps:
 
   - build:
-    image: alpine:edge
+    image: node:22-alpine
+    environment:
+      ASTRO_TELEMETRY_DISABLED: 1
     commands:
-      - apk update && apk add --no-cache zola
-      - zola build
+      - npm ci
+      - npm run build
 
   - deploy:
     image: alpine:edge
@@ -22,5 +24,5 @@ steps:
         chmod 0700 ~/.ssh/config
         echo "$SSH_KEY" > ~/.ssh/key
         chmod 0600 ~/.ssh/key
-      - rsync -rP --delete -e "ssh -p $PORT -i ~/.ssh/key" public/ "$USERNAME@$HOST:$DEPLOY_PATH"
+      - rsync -rP --delete -e "ssh -p $PORT -i ~/.ssh/key" dist/ "$USERNAME@$HOST:$DEPLOY_PATH"
     secrets: [ssh_key, username, port, host, deploy_path]

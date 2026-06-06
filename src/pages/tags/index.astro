@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getPosts, getTagUrl } from '../../lib/blog';
+
+const counts = new Map<string, number>();
+for (const post of await getPosts()) {
+  for (const tag of post.data.tags) {
+    counts.set(tag, (counts.get(tag) ?? 0) + 1);
+  }
+}
+const tags = [...counts.entries()].sort(([a], [b]) => a.localeCompare(b));
+---
+<BaseLayout title="Tags - Daniele 'eriol' Tricoli Website">
+  <div class="row">
+    <div class="col-lg-12">
+      <article>
+        <header>
+          <h1>Tags</h1>
+        </header>
+        <ul class="list-unstyled">
+          {tags.map(([tag, count]) => (
+            <li>
+              <span class="badge bg-secondary">
+                <a href={getTagUrl(tag)}>#{tag} ({count})</a>
+              </span>
+            </li>
+          ))}
+        </ul>
+      </article>
+    </div>
+  </div>
+</BaseLayout>

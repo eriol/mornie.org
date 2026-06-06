@@ -1,11 +1,11 @@
 # build the site
 build: clean
-	@zola build
+	@npm run build
 
 # remove built site
 clean:
-	rm -rf public
+	rm -rf dist
 
-# run devel server with drafts enabled
+# run devel server
 serve:
-	@zola serve --drafts
+	@npm run dev

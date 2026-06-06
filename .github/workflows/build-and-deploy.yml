@@ -8,18 +8,24 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      ASTRO_TELEMETRY_DISABLED: 1
     steps:
       - uses: actions/checkout@v4
-      - name: Install zola and build the site
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install dependencies and build the site
         run: |
-          sudo snap install --edge zola
-          zola build
+          npm ci
+          npm run build
       - name: Create cache for files to deploy
         uses: actions/cache/save@v4
         with:
           path: |
-            public
-          key: ${{ runner.os }}-zola-${{ github.sha }}
+            dist
+          key: ${{ runner.os }}-astro-${{ github.sha }}
 
   publish:
     needs: build
@@ -36,7 +42,7 @@ jobs:
         uses: actions/cache/restore@v4
         with:
           path: |
-            public
-          key: ${{ runner.os }}-zola-${{ github.sha }}
+            dist
+          key: ${{ runner.os }}-astro-${{ github.sha }}
       - run: ls
-      - run: rsync -rP --delete -e "ssh -p ${{secrets.PORT}} -i ~/.ssh/key" public/ "${{secrets.USERNAME}}@${{secrets.HOST}}:${{secrets.DEPLOY_PATH}}"
+      - run: rsync -rP --delete -e "ssh -p ${{secrets.PORT}} -i ~/.ssh/key" dist/ "${{secrets.USERNAME}}@${{secrets.HOST}}:${{secrets.DEPLOY_PATH}}"

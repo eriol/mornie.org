@@ -1,0 +1,16 @@
+{
+  "name": "mornie.org",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "astro build",
+    "dev": "astro dev",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/rss": "^4.0.12",
+    "astro": "^5.9.3",
+    "sass": "^1.89.1"
+  },
+  "devDependencies": {}
+}
