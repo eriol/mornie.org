@@ -31,7 +31,7 @@ function pageUrl(pageNumber: number) {
               <li>
                 Tags:{' '}
                 {post.data.tags.map((tag) => (
-                  <span class="badge bg-secondary">
+                  <span class="badge bg-secondary me-1">
                     <a href={getTagUrl(tag)}>#{tag}</a>
                   </span>
                 ))}
