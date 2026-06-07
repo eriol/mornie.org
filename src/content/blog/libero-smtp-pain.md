@@ -1,7 +1,7 @@
 ---
 title: "Libero SMTP pain :("
 date: "2006-12-28T03:06:00+01:00"
-tags: []
+tags: ["email"]
 ---
 
 Since few days the SMTP server of my [ISP](http://internet.libero.it/) has
@@ -9,7 +9,7 @@ problems. When I post in several mailing lists I get this message: RCPT address
 has non-existant domain. So now I'm using exim4 from my laptop when I get that
 error, but I hope to get a VPS soon to solve the problem's root. ;)
 
-**Update:** The SMTP of my provider sends only if it finds a MX record in the 
+**Update:** The SMTP of my provider sends only if it finds a MX record in the
 addressee's domain. I searched a little and I discovered that
 [RFC 974](http://www.ietf.org/rfc/rfc974.txt) says:
 
