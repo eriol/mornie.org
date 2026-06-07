@@ -11,6 +11,9 @@
     "@astrojs/rss": "^4.0.12",
     "astro": "^5.9.3",
     "bootstrap": "^5.3.8",
+    "katex": "^0.17.0",
+    "rehype-katex": "^7.0.1",
+    "remark-math": "^6.0.0",
     "sass": "^1.89.1"
   }
 }
