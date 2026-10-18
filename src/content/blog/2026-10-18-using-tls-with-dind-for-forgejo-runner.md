@@ -1,7 +1,7 @@
 ---
 date: 2026-10-18 19:29:24+02:00
 title: "Using TLS with dind for Forgejo Runner"
-tags: [""]
+tags: ["ci", "docker", "forgejo", "homelab", "tls"]
 ---
 
 Some time ago I deployed a Forgejo runner on a different machine from the one
