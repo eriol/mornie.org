@@ -20,13 +20,13 @@ const posts = (await getPosts()).filter((post) => post.data.tags.includes(tag));
       {posts.map((post) => (
         <section>
           <header>
-            <h2><a href={getPostUrl(post.slug)}>{post.data.title}</a></h2>
+            <h2><a href={getPostUrl(post.id)}>{post.data.title}</a></h2>
             <span>
               {formatDate(post.data.date)} &middot; {getReadingTime(post.body)} minute read
             </span>
           </header>
           {post.data.description && <p>{post.data.description}</p>}
-          <a class="no-underline" href={getPostUrl(post.slug)}>Read full entry &rarr;</a>
+          <a class="no-underline" href={getPostUrl(post.id)}>Read full entry &rarr;</a>
         </section>
       ))}
     </div>
