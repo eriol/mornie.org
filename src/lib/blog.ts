@@ -20,12 +20,12 @@ export function getReadingTime(body: string) {
 }
 
 // Remove date from slug.
-export function getPostSlug(slug: string) {
-  return slug.replace(/^\d{4}-\d{2}-\d{2}-/, '');
+export function getPostSlug(id: string) {
+  return id.replace(/^\d{4}-\d{2}-\d{2}-/, '');
 }
 
-export function getPostUrl(slug: string) {
-  return `/blog/${getPostSlug(slug)}/`;
+export function getPostUrl(id: string) {
+  return `/blog/${getPostSlug(id)}/`;
 }
 
 export function getTagUrl(tag: string) {
