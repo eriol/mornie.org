@@ -1,5 +1,4 @@
 ---
-draft: true
 date: 2026-10-18 19:29:24+02:00
 title: "Using TLS with dind for Forgejo Runner"
 tags: [""]
